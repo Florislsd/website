@@ -1,0 +1,434 @@
+/*------------------------------------------------------------------------
+# Free Splash HTML Templates - Feb 3, 2018
+# ------------------------------------------------------------------------
+# Designed & coded by Awe7 Team
+# Websites:  http://www.awe7.com -  Email: info@awe7.com
+--------------------------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #787878;
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .title-01--11 .title__heading {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .title-01--11 .title__heading {
+    font-size: 4.375rem;
+  }
+}
+
+
+.title-01--11 .title__description {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 992px) {
+  .title-01--11 .title__description {
+    font-size: 1.25rem;
+    padding: 0 5.9375rem;
+  }
+}
+.hero-section__wrap {
+  height: 100vh;
+}
+.hero-section--color * {
+  color: rgb(255, 255, 255);
+}
+
+
+.hero-section__words .title__effect {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.hero-section__words .title__effect.is-visible {
+  position: relative;
+  opacity: 1;
+}
+
+.no-js .hero-section__words .title__effect {
+  opacity: 0;
+}
+
+.no-js .hero-section__words .title__effect.is-visible {
+  opacity: 1;
+}
+/* --------------------------------
+
+xzoom
+
+-------------------------------- */
+.hero-section.zoom .hero-section__words {
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+.hero-section.zoom .title__effect {
+  opacity: 0;
+}
+
+.hero-section.zoom .title__effect.is-visible {
+  opacity: 1;
+  -webkit-animation: zoom-in 0.8s;
+  animation: zoom-in 0.8s;
+}
+
+.hero-section.zoom .title__effect.is-hidden {
+  -webkit-animation: zoom-out 0.8s;
+  animation: zoom-out 0.8s;
+}
+
+@-webkit-keyframes zoom-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateZ(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+  }
+}
+
+@keyframes zoom-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateZ(100px);
+    transform: translateZ(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@-webkit-keyframes zoom-out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateZ(-100px);
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateZ(-100px);
+    transform: translateZ(-100px);
+  }
+}
+
+#particles-js canvas {
+  display: block;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+  transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0
+}
+
+.scene
+            {
+                background: linear-gradient(#111425,#3751e0);
+
+                  position: absolute; /* make it relative to the viewport */
+                  inset: 0; /* make the div close to the edge of the relative element, here the viewport, so it takes the full screen */
+                  z-index: 998;
+                  height: 100%;
+
+                }
+
+
+            .forest {
+              position: fixed;
+              bottom: 0px;
+              width: 100%;
+              height: auto;
+              z-index: 999;
+          }
+            
+
+            .scene i
+            {
+                position: absolute;
+                background: #fff;
+                border-radius: 50%;
+                animation: animate linear infinite;
+                z-index: 998;
+            }
+            @keyframes animate
+            {
+                0%
+                {
+                    opacity: 0;
+                    transform: translateY(0);
+                }
+                
+                10%,90%
+                {
+                    opacity: 1;
+                }
+
+                100%
+                {
+                    opacity: 0;
+                    transform: translateY(-100px);
+                }
+            
+            }
+
+            .logo {
+              display: block;
+              margin-top: 5%;
+              margin-left: auto;
+              margin-right: auto;
+              width: 50%;
+              z-index: 1000;
+          }
+
+      
+            .content-wrap {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            z-index: 1001;
+        }
+        .scene .content-wrap .fly-in-text {
+            list-style: none;
+        }
+        .scene .content-wrap .fly-in-text li {
+            display: inline-block;
+            margin-right: 30px;
+            font-size: 5em;
+            color: #fff;
+            opacity: 1;
+            transition: all 2s ease;
+        }
+        .scene .content-wrap .fly-in-text li:last-child {
+            margin-right: 0;
+        }
+        .scene .content-wrap .enter-button {
+            display: block;
+            text-align: center;
+            font-size: 1em;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #adff2f;
+            opacity: 1;
+            transition: all 1s ease 2s;
+        }
+        
+        .scene-section.content-hidden .content-wrap .fly-in-text li { opacity: 0; }
+        .scene-section.content-hidden .content-wrap .fly-in-text li:nth-child(1) { transform: translate3d(-100px, 0, 0); }
+        .scene-section.content-hidden .content-wrap .fly-in-text li:nth-child(2) { transform: translate3d(100px, 0, 0); }
+        .scene.content-hidden .content-wrap .knop { opacity: 0; transform: translate3d(0, -150px, 0); }
+        
+        @media (min-width: 800px) {
+            .scene-section .content-wrap .fly-in-text li { font-size: 10em; }
+            .scene-section .content-wrap .enter-button { font-size: 1.5em; }
+        }
+        
+        .knop {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            transition: all 1s ease 1s;
+            z-index: 1001;
+        }
+
+        .knop img {
+            transform: scale(4.60);
+            opacity: 0.7;
+            transition: opacity 0.4s, transform 0.4s;
+        }
+
+        .knop img:hover {
+            transform: scale(4.37);
+            opacity: 1;
+        }
+
+        .anitext {
+          display: block;
+          margin-top: 5%;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+          z-index: 1000;
+      }
+
+      .moon2 {
+
+          position:absolute;
+          bottom:500px;
+          left:0%;
+          z-index: 1000;
+
+        }
+
+      a {
+        color: #1c1c1c;
+        text-decoration: none;
+      }
+      
+      .btn, button, input[type="submit"], input[type="button"] {
+        display: inline-block;
+        line-height: 1.625;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1.75px;
+        padding: 1rem 3.125rem;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        outline: none !important;
+        cursor: pointer;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        transition: all 0.3s ease;
+      }
+      
+      .btn-primary {
+        color: #fff;
+        background-color: #2e4bfd;
+        border-color: #2e4bfd;
+      }
+      
+      .btn-primary:hover {
+        color: #fff;
+        background-color: #021fd2;
+        border-color: #0219aa;
+      }
+
+      .mute {
+        position: absolute;
+        left: 5%;
+        top: 5%;
+    }
+
+
+      .mute img {
+        transform: scale(0.60);
+        opacity: 0.7;
+        transition: opacity 0.4s, transform 0.4s;
+    }
+
+    .mute img:hover {
+        transform: scale(0.37);
+        opacity: 1;
+    }
+
+    .text-secondary {
+    color: #3d5d6f;
+  }
+  
+  .h4,
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    color: rgb(255, 255, 255);
+  }
+  
+  .fa,
+  .fas {
+    font-family: 'FontAwesome';
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: normal;
+  }
+  
+  .right-0 {
+    right: 0;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  
+  .h-100 {
+    height: 100%;
+  }
+  
+  a.text-secondary:focus,
+  a.text-secondary:hover {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  #accordion .fa-plus {
+    transition: -webkit-transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  }
+  
+  #accordion a[aria-expanded=true] .fa-plus {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .faq {
+
+    text-align: center;
+    background-color: transparent;
+  }
